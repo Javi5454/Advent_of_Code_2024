@@ -5,7 +5,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     //Comprobamos la cantidad de argumentos
-    if args.len() != 1 {
+    if args.len() == 2 {
         let file_path = &args[1];
 
         let input = fs::read_to_string(file_path).expect("Error leyendo el archivo!");
